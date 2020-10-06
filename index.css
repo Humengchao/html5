@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/04/17/335618/8757ae4448b32b7da0878e32c3c33d1b.jpg);
+    background-attachment: fixed;
+}
+
+.img-wow {
+    width: 100%;
+    background-image: url(https://i.pinimg.com/originals/78/e3/76/78e37649cf6219d642dcf3e689e8e753.jpg);
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.card-mc {
+    width: 30%;
+    float: left;
+    margin-right: 3%
+}

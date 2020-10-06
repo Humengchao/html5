@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+    <script src="jQuery.min.js"></script>
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header_footer.css">
+
+</head>
+
+<body style="background-color: aquamarine;">
+    <header>
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-sm bg-blue navbar-blue navbar-bg-mc">
+
+            <!-- logo -->
+            <a class="navbar-band padding30-mc" href="#">NCUSOFT</a>
+
+            <!-- 链接 -->
+            <ul class="navbar-nav">
+                <li class="nav-item padding8-mc"><a class="nav-item" href="#">主页</a></li>
+
+                <!-- 下拉框 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">游戏</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">英雄联盟 LOL</a>
+                        <a href="#" class="dropdown-item">反恐精英 全球攻势 CS GO</a>
+                        <a href="#" class="dropdown-item">魔兽世界 WOW</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">服务</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">软件工程1810</a>
+                        <a href="" class="dropdown-item">作者：胡梦潮</a>
+                        <a href="" class="dropdown-item">学号：8003118060</a>
+                    </div>
+                </li>
+
+                <li class="nav-item padding8-mc"><a class="nav-item" href="#">周边商城</a></li>
+
+            </ul>
+
+            <!-- 搜索框 -->
+            <form class="form-inline">
+                <input type="text" class="form-control" id="finder" placeholder="搜索商城">
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+
+            <!-- 下拉框 -->
+            <li class="nav-item dropdown mycount-mc">
+                <a class="nav-link dropdown-toggle mycount-mc" href="#" data-toggle="dropdown"><img src="icon_img/Account.png" /> 我的账户</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><button class="btn btn-primary btn-sm">登录</button></a>
+                    <a href="#" class="dropdown-item"><img src="icon_img/Account.png" /> 账户</a>
+                    <a href="#" class="dropdown-item"><img src="icon_img/add-circle.png" /> 注册</a>
+                </div>
+            </li>
+        </nav>
+
+        <!-- bootstrap轮播图 -->
+        <div id="lunbotu" class="carousel slide" data-ride="carousel">
+
+            <!-- 图片下单序号 -->
+            <ul class="carousel-indicators">
+                <li data-target="#lunbotu" data-slide-to="0" class="active"></li>
+                <li data-target="#lunbotu" data-slide-to="1"></li>
+                <li data-target="#lunbotu" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="https://cms.cnc.blzstatic.cn/cms/gallery/V2JHJQZKK0CW1597650220229.jpg" alt=""></div>
+                <div class="carousel-item"><img src="https://cdn-images.win.gg/resize/w/932/h/420/format/jpg/type/progressive/fit/cover/path/news/5adaacd4531b78ff8b5cedfe3f4d5212/1fe2bfea8366c0a7de314093965a5f46/original.jpg" alt="">
+                </div>
+                <div class="carousel-item"><img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" alt="">
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#lunbotu" data-slide="prev"><span
+                    class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#lunbotu" data-slide="next"><span
+                    class="carousel-control-next-icon"></span></a>
+        </div>
+    </header>
+    <hr>
+
+    <!-- 游戏商品展示 -->
+    <div>
+        <h2>【畅享双节】限时促销</h2>
+
+        <div class="container container-mc clearfix">
+            <hr>
+
+            <!-- 单个产品1 -->
+            <span class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称1</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格和购买按钮一个左浮动一个右浮动 -->
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </span>
+
+
+            <!-- 单个产品2 -->
+            <span class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称2</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </span>
+
+            <!-- 单个产品3 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称3</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品4 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称4</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品5 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称5</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品6 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称6</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间部分的固定图片 -->
+    <div class="img-wow">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- 游戏周边商品 -->
+
+    <div>
+        <h2>周边商城</h2>
+
+        <div class="container container-mc clearfix">
+            <hr>
+
+            <!-- 单个产品1 -->
+            <span class="card card-mc">
+            <!-- 图片 -->
+            <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+            <!-- 文字 -->
+            <div class="card-body">
+                <!-- 简介 -->
+                <h4 class="card-title">游戏名称1</h4>
+                <p class="card-text">游戏简介</p>
+
+                <!-- 价格和购买按钮一个左浮动一个右浮动 -->
+                <!-- 价格 -->
+                <div class="float-left">
+                    <p><del>￥100</del></p>
+                    <p>￥50</p>
+                </div>
+
+                <!-- 购买按钮 -->
+                <a class="btn btn-primary float-right" href="">加入购物车</a>
+            </div>
+        </span>
+
+
+            <!-- 单个产品2 -->
+            <span class="card card-mc">
+            <!-- 图片 -->
+            <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+            <!-- 文字 -->
+            <div class="card-body">
+                <!-- 简介 -->
+                <h4 class="card-title">游戏名称2</h4>
+                <p class="card-text">游戏简介</p>
+
+                <!-- 价格 -->
+                <div class="float-left">
+                    <p><del>￥100</del></p>
+                    <p>￥50</p>
+                </div>
+
+                <!-- 购买按钮 -->
+                <a class="btn btn-primary float-right" href="">加入购物车</a>
+            </div>
+        </span>
+
+            <!-- 单个产品3 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称3</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品4 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称4</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品5 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称5</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+
+            <!-- 单个产品6 -->
+            <div class="card card-mc">
+                <!-- 图片 -->
+                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+
+                <!-- 文字 -->
+                <div class="card-body">
+                    <!-- 简介 -->
+                    <h4 class="card-title">游戏名称6</h4>
+                    <p class="card-text">游戏简介</p>
+
+                    <!-- 价格 -->
+                    <div class="float-left">
+                        <p><del>￥100</del></p>
+                        <p>￥50</p>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <a class="btn btn-primary float-right" href="">加入购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer1">
+        <a href="https://www.battlenet.com.cn/">战网</a>&nbsp&nbsp <a href="https://www.wowchina.com/zh-cn/">魔兽世界</a>&nbsp&nbsp
+        <a href="https://bbs.nga.cn/">NGA论坛</a> &nbsp&nbsp
+        <a href="https://lol.qq.com/main.shtml">英雄联盟</a> &nbsp&nbsp
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">CSGO</a> &nbsp&nbsp <a href="https://store.steampowered.com/">steam</a><br> copyright&copy2020. &nbsp&nbsp胡梦潮&nbsp&nbsp .All&nbspRights&nbspReserved.<br> 备案号：
+        <a href="http://www.beian.miit.gov.cn/">赣ICP备19007913号-2</a>
+        </small>
+    </footer>
+
+</body>
+
+</html>

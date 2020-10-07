@@ -3,11 +3,27 @@ body {
     background-attachment: fixed;
 }
 
+.lunbotu {
+    height: 500px;
+}
+
+.lunbotu .carousel-inner .carousel-item>img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
 .img-wow {
     width: 100%;
     background-image: url(https://i.pinimg.com/originals/78/e3/76/78e37649cf6219d642dcf3e689e8e753.jpg);
     background-attachment: fixed;
     background-repeat: round;
+    padding-bottom: 25%;
+    margin-bottom: 2%;
+}
+
+.white-mc {
+    color: white;
 }
 
 .clearfix:before,

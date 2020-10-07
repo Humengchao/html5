@@ -16,25 +16,25 @@
 
 </head>
 
-<body style="background-color: aquamarine;">
+<body>
     <header>
         <!-- 导航栏 -->
         <nav class="navbar navbar-expand-sm bg-blue navbar-blue navbar-bg-mc">
 
             <!-- logo -->
-            <a class="navbar-band padding30-mc" href="#">NCUSOFT</a>
+            <a class="navbar-band padding30-mc" href="index.html">NCUSOFT</a>
 
             <!-- 链接 -->
             <ul class="navbar-nav">
-                <li class="nav-item padding8-mc"><a class="nav-item" href="#">主页</a></li>
+                <li class="nav-item padding8-mc"><a class="nav-item" href="index.html">主页</a></li>
 
                 <!-- 下拉框 -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">游戏</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">英雄联盟 LOL</a>
-                        <a href="#" class="dropdown-item">反恐精英 全球攻势 CS GO</a>
-                        <a href="#" class="dropdown-item">魔兽世界 WOW</a>
+                        <a href="#game" class="dropdown-item">星际争霸</a>
+                        <a href="#game" class="dropdown-item">守望先锋</a>
+                        <a href="#game" class="dropdown-item">魔兽世界</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -46,7 +46,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item padding8-mc"><a class="nav-item" href="#">周边商城</a></li>
+                <li class="nav-item padding8-mc"><a class="nav-item" href="#other">周边商城</a></li>
 
             </ul>
 
@@ -60,15 +60,15 @@
             <li class="nav-item dropdown mycount-mc">
                 <a class="nav-link dropdown-toggle mycount-mc" href="#" data-toggle="dropdown"><img src="icon_img/Account.png" /> 我的账户</a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item"><button class="btn btn-primary btn-sm">登录</button></a>
+                    <a href="login.html" class="dropdown-item"><button class="btn btn-primary btn-sm">登录</button></a>
                     <a href="#" class="dropdown-item"><img src="icon_img/Account.png" /> 账户</a>
-                    <a href="#" class="dropdown-item"><img src="icon_img/add-circle.png" /> 注册</a>
+                    <a href="login.html" class="dropdown-item"><img src="icon_img/add-circle.png" /> 注册</a>
                 </div>
             </li>
         </nav>
 
         <!-- bootstrap轮播图 -->
-        <div id="lunbotu" class="carousel slide" data-ride="carousel">
+        <div id="lunbotu" class="carousel slide lunbotu" data-ride="carousel">
 
             <!-- 图片下单序号 -->
             <ul class="carousel-indicators">
@@ -80,9 +80,9 @@
             <!-- 图片 -->
             <div class="carousel-inner">
                 <div class="carousel-item active"><img src="https://cms.cnc.blzstatic.cn/cms/gallery/V2JHJQZKK0CW1597650220229.jpg" alt=""></div>
-                <div class="carousel-item"><img src="https://cdn-images.win.gg/resize/w/932/h/420/format/jpg/type/progressive/fit/cover/path/news/5adaacd4531b78ff8b5cedfe3f4d5212/1fe2bfea8366c0a7de314093965a5f46/original.jpg" alt="">
+                <div class="carousel-item"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601997059322&di=b4aafc1821b360f634f1aa4c10eca99d&imgtype=0&src=http%3A%2F%2Fimg2.gamersky.com%2FArticle%2Fgsupload_1395%2F200909%2F20090902163540173.jpg" alt="">
                 </div>
-                <div class="carousel-item"><img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" alt="">
+                <div class="carousel-item"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601995783485&di=a627b734501a61c5ca59390ced3197fe&imgtype=0&src=http%3A%2F%2Fimg.nga.178.com%2Fattachments%2Fmon_201803%2F18%2F7Q5-7wh1XiZ4wT3cS1z4-u4.jpg" alt="">
                 </div>
             </div>
 
@@ -97,9 +97,8 @@
 
     <!-- 游戏商品展示 -->
     <div>
-        <h2>【畅享双节】限时促销</h2>
-
-        <div class="container container-mc clearfix">
+        <div class="container container-mc clearfix" id="game">
+            <h2 class="white-mc">【畅享双节】限时促销</h2>
             <hr>
 
             <!-- 单个产品1 -->
@@ -234,47 +233,30 @@
 
     <!-- 中间部分的固定图片 -->
     <div class="img-wow">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </div>
 
     <!-- 游戏周边商品 -->
 
     <div>
-        <h2>周边商城</h2>
-
-        <div class="container container-mc clearfix">
+        <div class="container container-mc clearfix" id="other">
+            <h2 class="white-mc">周边商城</h2>
             <hr>
 
             <!-- 单个产品1 -->
             <span class="card card-mc">
             <!-- 图片 -->
-            <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+            <img class="card-image-top card-image-mc" src="icon_img/jaina.jpeg" alt="Card image" alt="">
 
             <!-- 文字 -->
             <div class="card-body">
                 <!-- 简介 -->
-                <h4 class="card-title">游戏名称1</h4>
-                <p class="card-text">游戏简介</p>
+                <h4 class="card-title">吉安娜</h4>
 
                 <!-- 价格和购买按钮一个左浮动一个右浮动 -->
                 <!-- 价格 -->
                 <div class="float-left">
-                    <p><del>￥100</del></p>
-                    <p>￥50</p>
+                    <p>￥3339</p>
                 </div>
 
                 <!-- 购买按钮 -->
@@ -286,18 +268,16 @@
             <!-- 单个产品2 -->
             <span class="card card-mc">
             <!-- 图片 -->
-            <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+            <img class="card-image-top card-image-mc" src="icon_img/xierwanasi.jpeg" alt="Card image" alt="">
 
             <!-- 文字 -->
             <div class="card-body">
                 <!-- 简介 -->
-                <h4 class="card-title">游戏名称2</h4>
-                <p class="card-text">游戏简介</p>
+                <h4 class="card-title">希尔瓦娜斯 风行者</h4>
 
                 <!-- 价格 -->
                 <div class="float-left">
-                    <p><del>￥100</del></p>
-                    <p>￥50</p>
+                    <p>￥3339</p>
                 </div>
 
                 <!-- 购买按钮 -->
@@ -308,18 +288,16 @@
             <!-- 单个产品3 -->
             <div class="card card-mc">
                 <!-- 图片 -->
-                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+                <img class="card-image-top card-image-mc" src="icon_img/saer.jpg" alt="Card image" alt="">
 
                 <!-- 文字 -->
                 <div class="card-body">
                     <!-- 简介 -->
-                    <h4 class="card-title">游戏名称3</h4>
-                    <p class="card-text">游戏简介</p>
+                    <h4 class="card-title">萨尔</h4>
 
                     <!-- 价格 -->
                     <div class="float-left">
-                        <p><del>￥100</del></p>
-                        <p>￥50</p>
+                        <p>￥500</p>
                     </div>
 
                     <!-- 购买按钮 -->
@@ -330,18 +308,16 @@
             <!-- 单个产品4 -->
             <div class="card card-mc">
                 <!-- 图片 -->
-                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+                <img class="card-image-top card-image-mc" src="icon_img/aersasi.jpeg" alt="Card image" alt="">
 
                 <!-- 文字 -->
                 <div class="card-body">
                     <!-- 简介 -->
-                    <h4 class="card-title">游戏名称4</h4>
-                    <p class="card-text">游戏简介</p>
+                    <h4 class="card-title">巫妖王 / 阿尔萨斯</h4>
 
                     <!-- 价格 -->
                     <div class="float-left">
-                        <p><del>￥100</del></p>
-                        <p>￥50</p>
+                        <p>￥800</p>
                     </div>
 
                     <!-- 购买按钮 -->
@@ -352,18 +328,16 @@
             <!-- 单个产品5 -->
             <div class="card card-mc">
                 <!-- 图片 -->
-                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+                <img class="card-image-top card-image-mc" src="icon_img/bingzhiaishang.jpg" alt="Card image" alt="">
 
                 <!-- 文字 -->
                 <div class="card-body">
                     <!-- 简介 -->
-                    <h4 class="card-title">游戏名称5</h4>
-                    <p class="card-text">游戏简介</p>
+                    <h4 class="card-title">冰之哀伤</h4>
 
                     <!-- 价格 -->
                     <div class="float-left">
-                        <p><del>￥100</del></p>
-                        <p>￥50</p>
+                        <p>￥599</p>
                     </div>
 
                     <!-- 购买按钮 -->
@@ -374,18 +348,16 @@
             <!-- 单个产品6 -->
             <div class="card card-mc">
                 <!-- 图片 -->
-                <img class="card-image-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" alt="">
+                <img class="card-image-top card-image-mc" src="icon_img/airenguowang.jpg" alt="Card image" alt="">
 
                 <!-- 文字 -->
                 <div class="card-body">
                     <!-- 简介 -->
-                    <h4 class="card-title">游戏名称6</h4>
-                    <p class="card-text">游戏简介</p>
+                    <h4 class="card-title">麦格尼铜须</h4>
 
                     <!-- 价格 -->
                     <div class="float-left">
-                        <p><del>￥100</del></p>
-                        <p>￥50</p>
+                        <p>￥500</p>
                     </div>
 
                     <!-- 购买按钮 -->
